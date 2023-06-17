@@ -95,24 +95,29 @@
         {
                 string[] rooms =
                 {
-                    "Temple of the Gods: \"You step into a grand chamber adorned with intricate carvings depicting mythological tales." +
-                    " The air crackles with divine energy as statues of mighty gods line the walls, their stern gazes watching over you.\"",
+                  "Kitchen:\r\nThe kitchen is a chaotic and grime-covered space, with greasy countertops, sticky floors, and flickering fluorescent lights that cast a sickly yellow hue." +
+                  " Dilapidated equipment clatters and clangs as the overworked and sweat-drenched cooks hustle to churn out greasy bar food." +
+                  " The air is thick with the scent of frying oil, burnt onions, and a faint hint of desperation.",
                  
-                    "Labyrinthine Corridor: \"You find yourself in a twisting maze of narrow corridors." +
-                    " The walls are adorned with ancient symbols, hinting at hidden secrets and ancient challenges. " +
-                    "The air is heavy with mystery and echoes of lost footsteps.\"",
+                  "Server Alley:\r\nThe server alley is a narrow, dimly lit corridor that connects the kitchen to the dining area. " +
+                  "Its cracked and stained walls are lined with shelves stacked haphazardly with dirty dishes and broken glassware. " +
+                  "An overflowing trash can emits an unpleasant odor that lingers in the air. " +
+                  "Weary servers maneuver through the clutter, occasionally slipping on spilled liquids, and exchanging tired glances.",
 
-                    "Enchanted Forest: \"You enter a lush forest bathed in ethereal light. " +
-                    "Towering trees seem to whisper secrets as mythical creatures dart among the foliage. " +
-                    "The air is thick with enchantment, and the ground shimmers with magical energy.\" ",
+                  "Dining Room:\r\nThe dining room exudes a worn-down charm, with peeling wallpaper, scratched tables, and torn vinyl seats." +
+                  " Dim, flickering neon signs advertise cheap drinks and daily specials." +
+                  " The air is filled with a mixture of stale beer, cigarette smoke, and the distinct aroma of years of accumulated grime. " +
+                  "Patrons, a colorful cast of characters, engage in animated conversations, their voices punctuated by occasional slurred words and rowdy outbursts.",
 
-                    "Underworld Abyss: \"You descend into a chilling abyss where darkness reigns. " +
-                    "Eerie whispers and distant cries fill the air as skeletal remnants lie scattered on the floor. " +
-                    "The oppressive atmosphere is punctuated by flickering flames and ominous shadows.",
+                  "Walk-in Freezer:\r\nThe walk-in freezer is a cramped and dingy chamber, its walls lined with rusted metal shelves and cracked tiles." +
+                  " Flickering, dim lights barely illuminate the room, casting eerie shadows. " +
+                  "The shelves are disorganized, stacked with boxes of frozen food covered in frost and icy residue." +
+                  " A musty odor permeates the air, hinting at years of neglect and poor maintenance.",
 
-                    "Celestial Observatory:  \"You step into a celestial observatory perched high above the mortal realm. " +
-                    "The walls are adorned with intricate star charts, and telescopes point towards distant constellations." +
-                    " The air crackles with cosmic energy and the whisper of distant worlds.\"",
+                  "Patio:\r\nThe patio is a weathered outdoor space, with rickety tables and chairs that wobble on uneven ground." +
+                  " Faded and peeling paint reveals years of neglect, and the cracked concrete floor is stained with mysterious splotches." +
+                  " Dim string lights, swaying in the breeze, cast a faint glow on chipped and graffiti-covered walls. " +
+                  "The sounds of nearby alleyways and passing traffic mingle with the lively conversations of patrons seeking solace from the griminess of the indoors."
                 };
 
                 //Random rand = new Random();

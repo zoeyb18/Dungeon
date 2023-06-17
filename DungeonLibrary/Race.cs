@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace DungeonLibrary
 {
-    public enum WeaponType
+    public enum Race
     {
-        Menu,
-        ToGo_Box,
-        Rolled_Silverware,
-        Ketchup_Bottle,
-        Bendy_Straw
+        Helpful_Host,
+        Stoned_Server,
+        Bubbly_Bartender,
+        Lazy_Linecook,
+        Devoted_Dishwasher
+
+
     }
 }
