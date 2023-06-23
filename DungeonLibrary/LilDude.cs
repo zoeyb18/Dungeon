@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace DungeonLibrary
 {
-    public enum WeaponType
+    public class LilDude : Monster
     {
-        Sword,
+        public LilDude()
+        {
 
+        }
     }
 }

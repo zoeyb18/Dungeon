@@ -1,4 +1,6 @@
-﻿namespace DungeonApp
+﻿using DungeonLibrary;
+
+namespace DungeonApp
 {
     internal class Program
     {
@@ -11,7 +13,18 @@
 
 
             #region PLayer
-            //TODO create player
+            // create player
+
+            //reference the notes in the test harness for some ideas of how to expand player creation.
+
+            //Potential expansion - Let the user choose from a list of premade weapons
+            Weapon sword = new("Lightsaber", 1, 8, 10, true, WeaponType.Sword);
+
+            //potential expansion - let the user choose their name and Race
+            Player player = new("Leeroy Jenkins", Race.Human, sword);
+
+            player.Score = 0;
+
             #endregion
 
 
@@ -22,10 +35,14 @@
             {
 
                 #region Monster and room generation
-                //TODO create monster
+                // create monster
                 //TODO create room - 
                 Console.WriteLine(GetRoom());//Room is temporary until you add room descriptions
 
+                Monster monster = Monster.GetMonster();
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("\nIn this is a " + monster.Name);
+                Console.ResetColor();
                 #endregion
 
                 #region Encounter Loop          
@@ -59,13 +76,15 @@
                                 break;
                             case '3':
                                 Console.WriteLine("Player info: ");
-                                //TODO print player details to the screen
-                                break;
+                            // print player details to the screen
+                            Console.WriteLine(player);
+                            break;
 
                             case '4':
                                 Console.WriteLine("Monster info: ");
-                                //TODO print monster details to the screen
-                                break;
+                            // print monster details to the screen
+                            Console.WriteLine(monster);
+                            break;
 
                             case '5':
                                 //quit the whole game. "reload = true;" gives us a new room and monster, "quit = true" quits the game, leaving both the inner AND outer loops.
@@ -80,7 +99,16 @@
                         #endregion
                         //TODO Check Player Life. If they are dead, quit the game and show them their score.
 
+                    if (player.Life <= 0)
+                    {
+                        Console.WriteLine("Dude... You died!\a");
+                        quit = true; //leave both loops.
+                    }
+
+
                     } while (!reload && !quit);
+                Console.WriteLine("You defeated " + player.Score +
+                    " monster" + (player.Score == 1 ? "." : "s. "));
                 #endregion
             } while (!quit);
 
