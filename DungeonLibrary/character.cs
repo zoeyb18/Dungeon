@@ -1,6 +1,7 @@
 ﻿namespace DungeonLibrary
 {
     //The abstract keyword denotes the beginning of an inheritance chain. This is an "incomplete implementation" and MUST be inherited. You CANNOT create/instantiate an abstract object.
+    //The abstract keyword denotes the beginning of an inheritance chain. This is an "incomplete implementation" and MUST be inherited. You CANNOT create/instantiate an abstract object.
     public abstract class Character
     {
         //Fields
@@ -47,6 +48,7 @@
             MaxLife = maxLife;//Life depends on MaxLife, so set MaxLife FIRST. 
             //if we happen to assign Life first, it will default to 0, because it can't be more than MaxLife (0).
             Life = life;
+
         }//end fully qualified constructor.
         public Character(string name, int hitChance, int block, int maxLife)
         {
@@ -81,7 +83,7 @@
             return $"---- {Name} ----\n" +
                    $"Life: {Life} / {MaxLife}\n" +
                    $"Hit Chance: {HitChance}%\n" +
-                   $"Block: {Block}%\n";
+                   $"Block: {Block}%";
         }
     }
 }

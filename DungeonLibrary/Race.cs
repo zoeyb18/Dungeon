@@ -8,12 +8,17 @@ namespace DungeonLibrary
 {
     public enum Race
     {
-        Human,
-        Tiefling,
-        Dwarf,
-        Giant,
-        Orc,
-        Cyborg
+      Kitsune,
+      Tengu,
+      Nekomata,
+      Oni, 
+      Kappa,
+      Komainu
+      
+
+      
+
+
 
 
     }
