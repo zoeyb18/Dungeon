@@ -1,5 +1,6 @@
 ﻿using DungeonLibrary;
 using System.Numerics;
+using System.Text;
 
 namespace DungeonApp
 {
@@ -9,7 +10,9 @@ namespace DungeonApp
         {
             #region Introduction
             //TODO Intro
-            Console.WriteLine("Hello Adventurer! Welcome to the Dungeon of Doom!");
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.WriteLine("ようこそ (Yōkoso)! Prepare for an epic adventure through a world of ancient samurai and yokai." +
+                " Embrace the challenges, and forge your path to greatness. Your destiny awaits in the depths of the dungeon.");
             #endregion
 
             #region Player Creation
