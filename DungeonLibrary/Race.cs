@@ -14,12 +14,6 @@ namespace DungeonLibrary
       Oni, 
       Kappa,
       Komainu
-      
-
-      
-
-
-
 
     }
 }
