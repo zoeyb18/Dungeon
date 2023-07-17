@@ -13,6 +13,9 @@ namespace DungeonApp
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("ようこそ (Yōkoso)! Prepare for an epic adventure through a world of ancient samurai and yokai." +
                 " Embrace the challenges, and forge your path to greatness. Your destiny awaits in the depths of the dungeon.");
+            Console.WriteLine("");
+            Console.WriteLine(".:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:..:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:.");
+            Console.WriteLine("");
             #endregion
 
             #region Player Creation
