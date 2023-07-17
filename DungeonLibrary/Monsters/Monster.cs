@@ -57,10 +57,10 @@ namespace DungeonLibrary
         public static Monster GetMonster()
         {
             //TODO Come back to replace these monsters with your own monster subtypes later.
-            Monster m1 = new("Naga", 50, 20, 25, 8, 2, "Serpent-like creature with the upper body of a humanoid.");
-            Monster m2 = new("Kirin", 70, 20, 25, 8, 2, "Mythical creature resembling a combination of a deer and a dragon.");
-            Monster m3 = new("Bakemono", 50, 20, 25, 8, 2, "Shapeshifting monster that can assume the form of ordinary objects or animals.");
-            Monster m4 = new("Kijo", 45, 25, 40, 12, 5, " Female demon known for their beauty and seductive charms.");
+            Monster m1 = new("Naga", 50, 20, 60, 15, 5, "Serpent-like creature with the upper body of a humanoid.");
+            Monster m2 = new("Kirin", 70, 20, 60, 20, 5, "Mythical creature resembling a combination of a deer and a dragon.");
+            Monster m3 = new("Bakemono", 50, 60, 15, 8, 5, "Shapeshifting monster that can assume the form of ordinary objects or animals.");
+            Monster m4 = new("Kijo", 45, 25, 60, 10, 5, " Female demon known for their beauty and seductive charms.");
 
             List<Monster> monsters = new()
             {

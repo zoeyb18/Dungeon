@@ -23,7 +23,7 @@ namespace DungeonApp
             //Reference the notes in the TestHarness for some ideas of how to expand player creation.
 
             //Potential expansion - Let the user choose from a list of pre-made weapons.
-            Weapon sword = new("Katana", 1, 8, 10, true, WeaponType.Sword);
+            Weapon sword = new("Katana", 15, 30, 10, true, WeaponType.Sword);
             Weapon dagger = new("Tanto", 1, 8, 10, false, WeaponType.Dagger);
             Weapon bow = new("Yumi", 2, 10, 10, true, WeaponType.Bow);
             Weapon projectile = new("Shuriken", 1, 8, 10, false, WeaponType.Projectile);
@@ -88,6 +88,7 @@ namespace DungeonApp
                             Console.WriteLine("Player info: ");
                             //print player details to the screen
                             Console.WriteLine(player1);
+                            Console.WriteLine("Monsters killed: " + player1.Score);
                             break;
 
                         case '4':
