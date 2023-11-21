@@ -11,12 +11,13 @@ namespace DungeonApp
             #region Introduction
             //TODO Intro
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            Console.WriteLine("ようこそ (Yōkoso)! Prepare for an epic adventure through a world of ancient samurai and yokai." +
-                " Embrace the challenges, and forge your path to greatness. Your destiny awaits in the depths of the dungeon.");
-            Console.WriteLine("");
-            Console.WriteLine(".:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:..:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:.");
-            Console.WriteLine("");
+            CenterText("ようこそ (Yōkoso)! Prepare for an epic adventure through a world of ancient samurai and yokai.");
+            CenterText("Embrace the challenges, and forge your path to greatness. Your destiny awaits in the depths of the dungeon.");
+            Console.WriteLine("\n.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:..:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:.");
             #endregion
+
+           
+           
 
             ICharacter player = CreatePlayer();
 
@@ -57,6 +58,7 @@ namespace DungeonApp
 
 
 
+
         static ICharacter CreatePlayer()
         {
             ICharacter player = null;
@@ -84,9 +86,7 @@ namespace DungeonApp
                 } while (!int.TryParse(Console.ReadLine(), out choice) || choice < 1 || choice > 8);
 
 
-
-
-
+                //MENU FOR RACE CHOICE
 
                 switch (choice)
                 {
@@ -198,6 +198,14 @@ namespace DungeonApp
             }
 
         }
+        static void CenterText(string text)
+        {
+            int width = Console.WindowWidth;
+            int leftPadding = (width - text.Length) / 2;
+
+            Console.SetCursorPosition(leftPadding, Console.CursorTop);
+            Console.WriteLine(text);
+        }
         static void ShowRaceDesc()
         {
             Console.WriteLine("\n\nRace Descriptions:");
@@ -226,7 +234,7 @@ interface ICharacter : IPlayer
     Weapon Weapon { get; set; }
 }
 
-
+//CLASSES
 
 class Weapon
 {
